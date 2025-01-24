@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- Boxicons for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/Dashboard/styles.css">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Group XIV</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#" class="active"><i class='bx bx-library'></i> Library</a></li>
+                    <li><a href="#"><i class='bx bx-file'></i> Briefs</a></li>
+                    <li><a href="#"><i class='bx bx-search'></i> Discovery</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-folders">
+                <h4>Folders</h4>
+                <ul>
+                    <li>Client - RIN DANA</li>
+                    <li>Client - DOEUR BORA</li>
+                    <li>Client - SORN VIRANU</li>
+                    <li>Client - KUOY HUYSEANG</li>
+                </ul>
+            </div>
+            <div class="sidebar-footer">
+                <p>Free Trial</p>
+                <p>4 days left</p>
+                <button class="btn-upgrade">Upgrade</button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="main-header">
+                <h1>Briefs</h1>
+                <p>Keep your vision on track</p>
+                <div class="header-actions">
+                    <button class="btn-create">Create New</button>
+                </div>
+            </header>
+
+            <!-- Filters and Table -->
+            <section class="content-section">
+                <div class="filters">
+                    <input type="text" placeholder="Search for brief...">
+                    <select class="sort-by">
+                        <option>No sorting</option>
+                        <option>Alphabetical (A-Z)</option>
+                        <option>Alphabetical (Z-A)</option>
+                        <option>Due date (Ascending)</option>
+                        <option>Due date (Descending)</option>
+                    </select>
+                </div>
+
+                <table class="briefs-table">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox"></th>
+                            <th>Name</th>
+                            <th>Gender</th>
+                            <th>Folder</th>
+                            <th>Assignee</th>
+                            <th>Status</th>
+                            <th>Due Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                         <tr>
+                             <td><input type="checkbox"></td>
+                             <td>RIN DANA</td>
+                             <td>Female</td>
+                             <td>Client - Uc</td>
+                             <td><i class='bx bxs-user'></i>Student</td>
+                             <td class="status-approved">To Do</td>
+                             <td>Apr 26</td>
+                         </tr>
+                         <tr>
+                             <td><input type="checkbox"></td>
+                             <td>DOEUR BORA</td>
+                             <td>Male</td>
+                             <td>Client - Uc</td>
+                             <td><i class='bx bxs-user'></i>Student</td>
+                             <td class="status-todo">Approved</td>
+                             <td>May 10</td>
+                         </tr>
+                         <tr>
+                             <td><input type="checkbox"></td>
+                             <td>SORN VIRANU</td>
+                             <td>Male</td>
+                             <td>Client - Uc</td>
+                             <td><i class='bx bxs-user'></i>Student</td>
+                             <td class="status-inprogress">In Progress</td>
+                             <td>May 15</td>
+                         </tr>
+                         <tr>
+                              <td><input type="checkbox"></td>
+                              <td>KUOY HUYSEANG</td>
+                              <td>Male</td>
+                              <td>Client - Uc</td>
+                              <td><i class='bx bxs-user'></i>Student</td>
+                              <td class="status-inprogress">Intern</td>
+                              <td>June 19</td>
+                          </tr>
+                     </tbody>
+                </table>
+
+                <div class="table-actions">
+                    <button class="btn-archive">Archive</button>
+                    <button class="btn-delete">Delete</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Script.js -->
+    <script src="/Dashboard/scripts.js"></script>
+</body>
+</html>
